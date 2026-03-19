@@ -1,0 +1,55 @@
+# 환경 설정 (민감 정보)
+config.yaml
+.env
+.env.*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# 테스트
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그
+*.log
+logs/
+
+# uv
+.python-version
+
+# Docker
+docker-compose.override.yml
+
+# DB
+*.sql
+*.dump
+
+# 모델 파일 (용량 큼)
+*.gguf
+*.bin
+*.safetensors
+
+# React 빌드
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.*
