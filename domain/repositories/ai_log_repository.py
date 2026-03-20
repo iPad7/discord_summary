@@ -12,3 +12,8 @@ class AILogRepository(ABC):
 
     @abstractmethod
     async def get_recent(self, limit: int = 50) -> list[AILog]: ...
+
+    @abstractmethod
+    async def get_recent_by_channel(
+        self, channel_id: int, limit: int = 50
+    ) -> list[AILog]: ...

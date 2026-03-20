@@ -7,3 +7,6 @@ class ConfigRepository(ABC):
 
     @abstractmethod
     async def set(self, key: str, value: str) -> None: ...
+
+    @abstractmethod
+    async def get_all(self) -> dict[str, str]: ...
